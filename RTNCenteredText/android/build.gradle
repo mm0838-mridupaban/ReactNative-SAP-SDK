@@ -7,7 +7,7 @@ buildscript {
     gradlePluginPortal()
   }
   dependencies {
-    classpath("com.android.tools.build:gradle:7.3.1")
+    classpath("com.android.tools.build:gradle:8.3.0-alpha01")
   }
 }
 
@@ -18,11 +18,11 @@ android {
   compileSdkVersion safeExtGet('compileSdkVersion', 33)
   namespace "com.rtncenteredtext"
 
-  defaultConfig {
-    minSdkVersion safeExtGet('minSdkVersion', 21)
-    targetSdkVersion safeExtGet('targetSdkVersion', 33)
-    buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", "true")
-  }
+  // defaultConfig {
+  //   minSdkVersion safeExtGet('minSdkVersion', 21)
+  //   targetSdkVersion safeExtGet('targetSdkVersion', 33)
+  //   buildConfigField("boolean", "IS_NEW_ARCHITECTURE_ENABLED", "true")
+  // }
 }
 
 repositories {

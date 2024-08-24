@@ -11,9 +11,8 @@
 //   "RTNCenteredText"
 // ) as HostComponent<NativeProps>;
 
-import type { HostComponent } from "react-native";
+import type { HostComponent,StyleProp, ViewStyle } from "react-native";
 import codegenNativeComponent from "react-native/Libraries/Utilities/codegenNativeComponent";
-import { StyleProp, ViewStyle } from "react-native";
 
 // Define custom props for your native component
 export interface NativeProps {
